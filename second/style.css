@@ -566,7 +566,7 @@ main {
 }
 
 body.dark .header {
-  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.8) 0%, rgba(255, 165, 0, 0.8) 50%, rgba(255, 69, 0, 0.8) 100%), linear-gradient(to bottom right, #ff8c00, #ff4500);
+  background-color: rgb(20, 20, 20);
 
 
 
@@ -574,7 +574,7 @@ body.dark .header {
 }
 
 body.light .header {
-  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.8) 0%, rgba(255, 165, 0, 0.8) 50%, rgba(255, 69, 0, 0.8) 100%), linear-gradient(to bottom right, #ff8c00, #ff4500);
+  background-color: rgb(20, 20, 20);
 
 
 
@@ -1612,17 +1612,18 @@ for-working{
   text-align: center;
   max-width: 900px;
   margin: 0 auto;
+  padding-top: 3rem;
 }
 
 .about-us-container h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 10px;
-  color: #333;
+  color: #fbecd5;
 }
 
 .about-description {
   font-size: 1.2rem;
-  color: #666;
+  color: #7c7c7c;
   margin-bottom: 30px;
 }
 
@@ -1637,18 +1638,43 @@ for-working{
   background-color: #4caf50;
   color: white;
   padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* border-radius: 10px; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
   text-align: center;
+
+  background-image: 
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.77)),
+  url("https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+   transform-style: preserve-3d;
+    background-position: center center;    
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    box-shadow: rgba(255, 119, 0, 0.925) 0px 20px 50px -25px;
+
 }
+
+.card-containered .card:hover{
+  background-position: 80% 20%;
+  transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+
 
 .card-containered .card h2 {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  transform: translate3d(0px, 0px, 20px);
+  color: #fbecd5;
+
 }
 
 .card-containered .card p {
   font-size: 1rem;
+  transform: translate3d(0px, 0px, 20px);
+  color: #878787;
+
 }
 
 .card-containered .card:nth-child(3) {
