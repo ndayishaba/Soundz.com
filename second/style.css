@@ -1432,6 +1432,9 @@ body.dark .footer-link img {
 }
 body.dark .footer-link .none{
   filter: none;
+  width: 3.5rem;
+  height: 3.5rem;
+  transform: translateY(-10px);
 }
 
 
@@ -1531,7 +1534,7 @@ input:checked {
 }
 
 .about-me h1 {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 
@@ -1710,6 +1713,8 @@ for-working{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
 }
 
 .cardo{
@@ -1725,15 +1730,18 @@ for-working{
 
 .cardo img{
     max-width: 280px;
-    width: 42vw;
-    height:350px;
+    width: 32vw;
+    height:320px;
     object-fit: cover;
     margin-left: -50px;
     margin-right: 30px;
     border-radius: inherit;
     box-shadow: 0 60px 40px rgb(0 0 0 /12%);
     transition: border-radius 0.3s;
+    background-color: white;
 }
+
+
 
 .cardo h2{
     font-size: 26px;
@@ -1762,7 +1770,7 @@ for-working{
 
 .cardo .btn-group{
     display: flex;
-    gap: 12px;
+    gap: 17px;
 }
 
 .cardo button{
@@ -1773,16 +1781,43 @@ for-working{
     min-width: 100px;
     text-align: center;
     font-family: inherit;
-    padding: 12px 26px;
-    font-size: 15px;
+    padding: 6px 26px;
+    font-size: 12px;
     font-weight: 500;
     border-radius: 40px;
+    margin-bottom: 1rem;
+    text-align: center;
 }
+
+.cardo .secondary{
+  cursor: pointer;
+}
+
+.cardo .secondary:hover {
+  background-color: #000;
+}
+
+
+.cardo .align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  width: 1px;
+}
+
+.cardo a {
+  text-decoration: none;
+}
+
+
 
 .cardo button.primary{
     background: #fff;
     color: black;
-
+    /* padding: 1px 86px; */
+    width: 200px;
 }
 @media (width<=600px){
     .cardo {
