@@ -457,11 +457,11 @@ main {
 /* Container for the menu button */
 .menu-btn-container {
   position: fixed;
-  top: 0;
+  top: 20%;
   right: 0;
   /* height: 100%; */
-  width: 200px; /* Adjust width as needed */
-  padding: var(--gutter-x-small);
+  /* width: 100px; */
+  /* padding: var(--gutter-x-small); */
   background-color: var(--bg-color-secondary); /* Background color for the side nav */
   z-index: 4;
 }
@@ -488,6 +488,8 @@ main {
   background-color: var(--bg-color-secondary);
   font-stretch: 125%;
   font-weight: 900;
+  font-size: 14px;
+  border-bottom: 2px solid #2e2e2e;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -507,7 +509,7 @@ main {
 /* ----- Navigation -----*/
 /* --------------------------------- */
 
-.nav {
+/* .nav {
   min-block-size: 100vh;
   position: fixed;
   width: 100%;
@@ -550,7 +552,7 @@ main {
 .nav-item a:hover::after,
 .nav-item a:focus::after {
   transform: scale(1);
-}
+} */
 
 /* --------------------------------- */
 /* ----- Header -----*/
@@ -1794,8 +1796,47 @@ for-working{
 }
 
 .cardo .secondary:hover {
-  background-color: #000;
+  cursor: pointer;
+  background-color: #5f5c5c;
 }
+
+/* SECONDARY BUTTONS */
+
+
+
+.cardo  .secondary {
+  display: inline-block;
+  width: 40%;
+  min-width: 100px;
+  padding: 10px 10px;
+  margin-bottom: 1rem;
+  background: #f0f0f0; /* or var(--bg-color-secondary) */
+  color: #333; /* or var(--important) */
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #ccc; /* or var(--border-dark) */
+  border-radius: 4px;
+  font-weight: 900;
+  font-stretch: 125%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 12px;
+}
+
+.cardo .secondary:hover {
+  background-color: #8a8989; /* or a darker shade */
+}
+
+/* .cardo  .primary {
+} */
+
+
+
+
+
+
+
+
 
 
 .cardo .align {
@@ -1858,3 +1899,7 @@ for-working{
         margin: -140px 0 30px 0;
     }
 }
+
+
+
+
