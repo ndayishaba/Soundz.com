@@ -10,31 +10,31 @@ const card2 = document.querySelector('.card2');
 const trans = document.querySelector('.trans');
 const menuBtn = document.querySelector('.menu-btn-container');
 
-window.addEventListener('scroll', () => {
-  if (scrollY > 1) {
-    menuBtn.style.borderBottom = '1px solid var(--border)';
-    menuBtn.style.backdropFilter = 'blur(10px)'
-  } else {
-    menuBtn.style.borderBottom = 'none';
-    menuBtn.style.backdropFilter = 'none';
+// window.addEventListener('scroll', () => {
+//   if (scrollY > 1) {
+//     menuBtn.style.borderBottom = '1px solid var(--border)';
+//     menuBtn.style.backdropFilter = 'blur(10px)'
+//   } else {
+//     menuBtn.style.borderBottom = 'none';
+//     menuBtn.style.backdropFilter = 'none';
 
-    console.log('sau')
-  }
-})
+//     console.log('sau')
+//   }
+// })
 
 
 const toggleNav = () => {
   nav.classList.toggle("hidden");
 
   // Prevent screen from scrolling when menu is opened
-  document.body.classList.toggle("lock-screen");
+  // document.body.classList.toggle("lock-screen");
 
   if (nav.classList.contains("hidden")) {
-    btnToggleNav.textContent = "menu";
+    // btnToggleNav.textContent = "menu";
   } else {
     // When menu is opened after transition change text respectively
     setTimeout(() => {
-      btnToggleNav.textContent = "close";
+      // btnToggleNav.textContent = "close";
     }, 475);
   }
 };
@@ -175,22 +175,24 @@ logosWrappers.forEach(async (logoWrapper, i) => {
 // });
 
 
+// THIS HIDES THE SIDE NAVBAR AT FIRST PAGE
 
-document.addEventListener("DOMContentLoaded", function() {
-  const menuButton = document.querySelector('.menu-btn');
-  const header = document.querySelector('.header');
 
-  window.addEventListener('scroll', () => {
-    const scrollPosition = window.scrollY;
+// document.addEventListener("DOMContentLoaded", function() {
+//   const menuButton = document.querySelector('.menu-btn');
+//   const header = document.querySelector('.header');
 
-    if (scrollPosition > header.offsetHeight) {
-      menuButton.classList.add('visible');
-      menuButton.classList.remove('hidden');
-    } else {
-      menuButton.classList.add('hidden');
-      menuButton.classList.remove('visible');
-    }
-  });
-});
+//   window.addEventListener('scroll', () => {
+//     const scrollPosition = window.scrollY;
+
+//     if (scrollPosition > header.offsetHeight) {
+//       menuButton.classList.add('visible');
+//       menuButton.classList.remove('hidden');
+//     } else {
+//       menuButton.classList.add('hidden');
+//       menuButton.classList.remove('visible');
+//     }
+//   });
+// });
 
 
