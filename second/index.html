@@ -48,7 +48,10 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="overlay.css" />
     <script src="script.js" defer></script>
+    <script src="overlay.js" defer></script>
+    <script src="services.js" defer></script>
 
     <!-- Your name here -->
     <title>TheSoundz</title>
@@ -56,6 +59,8 @@
 
   <body>
 
+    
+      
     <script>
       const theme = localStorage.getItem("theme") || "dark";
       document.body.classList.add(theme);
@@ -78,9 +83,9 @@
           <button class="menu-btn">
             <a href="../index.html">Home</a>
             <a href="#about">About</a>
-            <a href="#work">Services</a>
+            <a href="#" id="openCardBtn">Services</a>
             <a href="../photos/index.html">Gallery</a>
-            <a href="../playlist/index.html">Dj-Mix</a>
+            <a href="https://www.youtube.com/@musicfusionafrica2965">Dj-Mix</a>
             <a href="#contact">Contact</a>
           </button>
         </div>
@@ -122,57 +127,10 @@
         </div>
     </div>
 
-    <div id="boxer">
-      <div class="cardo">
-          <img class="photo" src="./assets/images/LOGOS/The Soundz Logo - White.png"  alt="">
 
-
-
-
-           <!-- <div>
-              <h2>Main Pages</h2>
-              <h3>What Do You Want To See?</h3>
-              <div class="btn-group">
-                <a href="#home">
-                  <button class="secondary">HOME</button> 
-                </a>
-                <button class="primary">Back To Homepage</button>
-              </div>
-
-              <div class="btn-group">
-                <a href="#about">
-                  <button class="secondary">ABOUT</button> 
-                </a>
-                <button class="primary">About TheSoundz</button>
-            </div>
-
-            <div class="btn-group">
-              <a href="#work">
-                <button class="secondary">SERVICES</button> 
-              </a>
-              <button class="primary">What We Do</button>
-          </div>
-          <div class="btn-group">
-            <a href="/photos/index.html">
-              <button class="secondary">GALLERY</button> 
-            </a>
-            <button class="primary">Selected Photos</button>
-        </div>
-
-          <div class="btn-group">
-            <a href="#mixes">
-              <button class="secondary">MIXES</button> 
-            </a>
-            <button  class="primary">Music Mixtapes</button>
-        </div>
-        <div class="btn-group">
-          <a href="#contact">
-            <button  class="align secondary">CONTACT</button> 
-          </a>
-          <button class="primary">Reach Out</button>
-      </div>
-     </div>
- -->
+  <div id="boxer">
+     <div class="cardo">
+          <img class="photo" src="./assets/images/LOGOS/The Soundz Logo - Black.jpg"  alt="">
 
  <div>
   <h2>Main Pages</h2>
@@ -187,12 +145,6 @@
     <a href="#about" class="secondary">ABOUT</a>
     <button class="primary">About TheSoundz</button>
   </div>
-
-  <div class="btn-group">
-    <a href="#work" class="secondary">SERVICES</a>
-    <button class="primary">What We Do</button>
-  </div>
-
   <div class="btn-group">
     <a href="../photos/index.html" class="secondary">GALLERY</a>
     <button class="primary">Selected Photos</button>
@@ -209,19 +161,46 @@
   </div>
 </div>
 
-
-
-
-
-
-
     </div>
   </div>
   
-    </header>
+</header>
+<!-- <div id="overlay" class="overlay">
+  <div class="card">
+    <h2>Choose Service</h2>
+    <div class="buttons">
+      <button class="card-btn">Sound Systems</button>
+      <button class="card-btn">Lights</button>
+      <button class="card-btn">Stages</button>
+      <button class="card-btn">Screens</button>
+      <button class="card-btn">Button 5</button>
+      <button class="card-btn">Button 6</button>
+    </div>
+  </div>
+</div> -->
+
+<div id="overlay" class="overlay">
+  <div class="card">
+    <h2>Available Service</h2>
+    <div class="buttons">
+      <button class="card-btn" id="soundBtn">Sound Systems</button>
+      <button class="card-btn" id="lightsBtn">Lights</button>
+      <button class="card-btn" id="stagesBtn">Stages</button>
+      <button class="card-btn" id="screensBtn">Screens</button>
+      <!-- <button class="card-btn" id="btn5">Button 5</button> -->
+      <!-- <button class="card-btn" id="btn6">Button 6</button> -->
+    </div>
+  </div>
+</div>
+
+
+
+
 
     <main>
+     
       
+
 
       <section class="work" id="work">
         <div class="container">
@@ -454,7 +433,7 @@
       </section>
 
       <!-- I write blog posts on dev.to at https://dev.to/devsyedmohsin. I have linked my articles accordingly, so please update the article title, description, and link accordingly. For example, if you write an article on Medium, link your article to Medium. Also, don't forget to update the reaction count. -->
-
+      
       <section class="article">
         <div class="container">
           <h2 class="h2" id="blog">YouTube Mixes</h2>

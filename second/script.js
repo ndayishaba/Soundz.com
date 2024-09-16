@@ -10,24 +10,11 @@ const card2 = document.querySelector('.card2');
 const trans = document.querySelector('.trans');
 const menuBtn = document.querySelector('.menu-btn-container');
 
-// window.addEventListener('scroll', () => {
-//   if (scrollY > 1) {
-//     menuBtn.style.borderBottom = '1px solid var(--border)';
-//     menuBtn.style.backdropFilter = 'blur(10px)'
-//   } else {
-//     menuBtn.style.borderBottom = 'none';
-//     menuBtn.style.backdropFilter = 'none';
-
-//     console.log('sau')
-//   }
-// })
-
 
 const toggleNav = () => {
   nav.classList.toggle("hidden");
 
-  // Prevent screen from scrolling when menu is opened
-  // document.body.classList.toggle("lock-screen");
+  
 
   if (nav.classList.contains("hidden")) {
     // btnToggleNav.textContent = "menu";
@@ -194,5 +181,7 @@ logosWrappers.forEach(async (logoWrapper, i) => {
 //     }
 //   });
 // });
+
+
 
 

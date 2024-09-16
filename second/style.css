@@ -459,11 +459,9 @@ main {
   position: fixed;
   top: 20%;
   right: 0;
-  /* height: 100%; */
-  /* width: 100px; */
   /* padding: var(--gutter-x-small); */
   background-color: var(--bg-color-secondary); /* Background color for the side nav */
-  z-index: 4;
+  z-index: 100;
 }
 
 /* Styling for the menu button as a side nav container */
@@ -565,6 +563,7 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  z-index: 100;
 }
 
 body.dark .header {
@@ -1833,12 +1832,6 @@ for-working{
 
 
 
-
-
-
-
-
-
 .cardo .align {
   display: flex;
   align-items: center;
@@ -1899,7 +1892,4 @@ for-working{
         margin: -140px 0 30px 0;
     }
 }
-
-
-
 
